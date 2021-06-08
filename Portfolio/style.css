@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Shippori+Mincho:wght@500;700&display=swap');
 
+:root {
+  --darkPurple: #361A67;
+  --teal: #1A675C;
+  --palePurple: #CDC6D9;
+  --lightSalmon: lightSalmon;
+  --yellow: #FFE37A;
+}
+
 /** global styles **/
+
 * {
   margin: 0px;
   padding: 0px;
@@ -13,7 +22,7 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
-  color: #361A67; /* purple */
+  color: var(--darkPurple);
 }
 
 h1, h2, h3, h4, h5 {
@@ -38,7 +47,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: #1A675C;
+  color: var(--teal);
 }
 
 a:hover {
@@ -59,8 +68,16 @@ i {
   height: 70px;
   display: flex;
   justify-content: space-around;
-  background-color: #1A675C /* green */;
-  color: white;
+  background-color: white;
+  color: var(--darkPurple);
+}
+
+#navbar a {
+  color: var(--teal);
+}
+
+#navbar a:hover {
+  color: black;
 }
 
 #logo {
@@ -99,41 +116,77 @@ nav a {
 #welcome-section {
   margin-top: 0px;
   padding-top: 0px;
-  color: white;
-  text-shadow: 2px 2px 6px #361A67;
   height: 100vh;
   width: auto;
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  background-image: url('https://images.unsplash.com/photo-1558350283-8269d86681f2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-  /* image by @sharonmccutcheon on Unsplash https://unsplash.com/photos/H_FbsufW7yw */
+  background-image: url("eberhard-grossgasteiger-NvesrDbsrL4-unsplash.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
-  background-color: #361A67;
+  background-color: var(--palePurple);
+  color: white;
+  text-shadow: 2px 2px 6px var(--darkPurple);
 }
+
+/*
+padding: 25px 0px 50px 0px;
+width: 100vw;
+height: auto;
+background-color: var(--teal);
+color: white;
+display: flex;
+flex-flow: column wrap;
+justify-content: center;
+align-items: center;
+} 
+*/
 
 @media screen and (max-width: 860px) {
   #welcome-section {
     background-attachment: scroll;
     text-align: center;
+    min-height: 150vh;
   }
 }
 
-#welcome-section i {
-  font-size: 2.5em;
+
+#plans-container {
+  width: 80vw;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.plans {
+  width: 30vw;
+  height: auto;
+  padding: 20px;
+  margin: 10px;
+  text-align: left;
+  border-radius: 20px;
+  background-color: rgba(54, 26, 103, .1);
+  color: black;
+  text-shadow: none;
+}
+
+.plans ul {
+  list-style: square;
+  padding: 10px 0px 0px 0px;
 }
 
 /** projects **/
 
 #projects {
-  padding: 15px 0px 15px 0px;
-  width: 100%;
+  padding: 25px 0px 50px 0px;
+  width: 100vw;
   height: auto;
-  background-color: #1A675C;
+  background-color: var(--teal);
   color: white;
   display: flex;
   flex-flow: column wrap;
@@ -141,6 +194,9 @@ nav a {
   align-items: center;
 }
 
+#projects, p {
+  text-align: center;
+}
 
 #project-container {
   display: flex;
@@ -157,6 +213,7 @@ nav a {
   margin: 10px;
   text-align: center;
   flex: 0 1 auto;
+  color: black;
 }
 
 .project-img {
@@ -165,22 +222,22 @@ nav a {
 }
 
 #project1 {
-  background: lightSalmon;
+  background: var(--lightSalmon);
 }
 
 #project2 {
-  background: #FFE37A;
+  background: var(--yellow);
 }
 
 #project3 {
-  background: #CDC6D9;
+  background: var(--palePurple);
 }
 
 /** contact **/
 
 #Contact {
-  width: 100%;
-  height: 100%;
+  height: 70vh;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -201,6 +258,7 @@ nav a {
 @media (max-width: 860px) {
   #contact-links {
     width: 100%;
+    flex-flow: column wrap;
   }
 }
 
@@ -209,7 +267,7 @@ nav a {
 /** disclaimer **/
 
 .disclaimer {
-  background-color: #361A67;
+  background-color: var(--darkPurple);
   color: white;
   font-size: .7em;
   text-align: center;

@@ -1,14 +1,19 @@
 <html>
 <head>
+
 <script src="https://kit.fontawesome.com/1aa887c412.js" crossorigin="anonymous"></script>
+
 <link rel="stylesheet" href="style.css">
+
+<title>mchlol: portfolio</title>
 </head>
+
 <!-- nav -->
 
 <nav id="navbar">
   
   <div id="logo">
-    <i class="fas fa-cloud-rain"></i> mchlol
+    <a href="#">mchlol <i class="fas fa-cloud-rain"></i></a>
     </div>
   
   <ul id="nav-list">
@@ -31,12 +36,35 @@
 <!-- welcome -->
 
 <div id="main-wrap">
+
 <section id="welcome-section" class="welcome">
-  <h1>Hello! </h1>
-  <h3>I'm a web developer.</h3>
-    <br>
-    <br>
-    <h4>...not really. But maybe one day I will be!</h4>
+
+  <h1>Hello! I'm mchlol <i class="fas fa-cloud-rain"></i></h1>
+  <h3>I'm learning to make accessible & interactive web experiences.</h3>
+    
+    <div id="plans-container">
+
+      <div class="plans">
+        <h4>I'm currently working on:</h4>
+        <ul>
+          <li>Learning JavaScript & DOM manipulation</li>
+          <li>Getting familiar with Git and Github</li>
+          <li>Building a GUI for my rockpaperscissors game</li>
+        </ul>
+      </div>
+
+      <div class="plans">
+        <h4>Soon I hope to:</h4>
+          <ul>
+           <li>Learn CSS animation</li>
+           <li>Learn how to use Bootstrap and Sass</li>
+           <li>Learn React</li>
+           <li>Improve my UX, UI, and accessibility knowledge</li>
+           <li>Improve my responsive design skills</li>
+          </ul>
+        </div>
+
+    </div>
 </section>
 
   
@@ -44,41 +72,40 @@
 
 <section id="projects">
   <h1>Projects</h1>
-  <p>Examples go here! I'll come back and add these if I ever make something cool enough to share.</p>
+  <p>Examples go here! I'll come back and add these if I ever make something cool enough to share.<br>
+    For now, you can have some of my goofy little learner projects.<br>
+
+  <br></p>
   
   <div id="project-container">
     
     <!-- start project tile -->
     <article id="project1" class="project-tile">
-      <a href="https://codepen.io/mchlol/details/MWbONvE" target="_blank">
-        <h3>Project</h3>
-      </a>
-      <a href="https://unsplash.com/photos/m_HRfLhgABo" target="_blank">
-        <img class="project-img" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80" alt="a laptop open on a desk with lines of code">
-          
+      <a href="https://mchlol.github.io/google-homepage/" target="_blank">
+        <h3>Google Homepage</h3>
+        <img class="project-img" src="Project-google-homepage.png" alt="screenshot of google homepage recreation project">
         </a>
+        <p>Recreate the Google homepage. Built for <a href="https://www.theodinproject.com" target="_blank">The Odin Project</a>.</p>
     </article>
     <!-- end project tile -->
     
     <!-- start project tile -->
     <article id="project2" class="project-tile">
-      <a href="https://codepen.io/mchlol/details/MWbONvE">
-        <h3>Project</h3>
-        </a>
-        <a href="https://unsplash.com/photos/hMYODfDWs9M" target="_blank">
-          <img class="project-img" src="https://images.unsplash.com/photo-1585384107568-5bc588c7eefd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=721&q=80" alt="css code on a white screen">
+      <a href="https://codepen.io/mchlol/full/BaQdRjO" target="_blank">
+        <h3>Bandaid Boards</h3>
+          <img class="project-img" src="Project-product-landingpage.png" alt="screenshot of Bandaid Boards fake product landing page project">
       </a>
+      <p>A landing page for a product I made up - a skateboard you can't fall off of. Built for <a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></p>
     </article>
     <!-- end project tile -->
     
     <!-- start project tile -->
     <article id="project3" class="project-tile">
-      <a href="https://codepen.io/mchlol/details/MWbONvE">
-        <h3>Project</h3>
+      <a href="https://mchlol.github.io/rockpaperscissors/" target="_blank">
+        <h3>Rock! Paper! Scissors!</h3>
+        <img class="project-img" src="Project-rockpaperscissors-consolegame.png" alt="screenshot of rock paper scissors being played in the Chrome console">
       </a>
-      <a href="https://unsplash.com/photos/k-rKfqSm4L4" target="_blank">
-        <img class="project-img" src="https://images.unsplash.com/photo-1585076641399-5c06d1b3365f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="laptop on a desk surrounded by candles, coffee, and plants, with a guitar in the background">
-      </a>
+      <p>A little game played in the browser console, currently working on a GUI. Built for <a href="https://www.theodinproject.com" target="_blank">The Odin Project</a></p>
     </article>
     <!-- end project tile -->
     
@@ -109,10 +136,8 @@
   
   <!-- disclaimer -->
     
-    <p class="disclaimer"><em>This page was built for
-    <a href="https://www.freecodecamp.org/" target="_blank"
-      >freeCodeCamp <i class="fab fa-free-code-camp"></i
-      ></a>. Photos via <a href="https://unsplash.com" target="_blank">Unsplash</a>.</em></p>
+    <p class="disclaimer"><em>All code & content by</em> mchlol <i class="fas fa-cloud-rain"></i><br>
+      <em>Header photo by <a href="https://unsplash.com/@eberhardgross?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">eberhard 🖐 grossgasteiger</a> on <a href="https://unsplash.com/s/photos/purple-clouds?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></em></p>
   
 </div>
 
