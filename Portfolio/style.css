@@ -164,7 +164,7 @@ align-items: center;
 }
 
 .plans {
-  width: 30vw;
+  width: 200px;
   height: auto;
   padding: 20px;
   margin: 10px;
@@ -178,6 +178,10 @@ align-items: center;
 .plans ul {
   list-style: square;
   padding: 10px 0px 0px 0px;
+}
+
+.plans h4 {
+  color: white;
 }
 
 /** projects **/
