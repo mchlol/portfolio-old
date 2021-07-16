@@ -127,9 +127,12 @@ nav a {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
+  color: var(--darkPurple);
+  /*
   background-color: var(--palePurple);
   color: white;
   text-shadow: 2px 2px 6px var(--darkPurple);
+  */
 }
 
 /*
@@ -170,9 +173,12 @@ align-items: center;
   margin: 10px;
   text-align: left;
   border-radius: 20px;
+
+  /*
   background-color: rgba(54, 26, 103, .1);
   color: black;
   text-shadow: none;
+  */
 }
 
 .plans ul {
@@ -180,9 +186,11 @@ align-items: center;
   padding: 10px 0px 0px 0px;
 }
 
+/*
 .plans h4 {
   color: white;
 }
+*/
 
 /** projects **/
 
@@ -226,15 +234,19 @@ align-items: center;
 }
 
 #project1 {
-  background: var(--lightSalmon);
+  background: var(--yellow);
 }
 
 #project2 {
-  background: var(--yellow);
+  background: var(--lightSalmon);
 }
 
 #project3 {
   background: var(--palePurple);
+}
+
+#project4 {
+  background: var(--yellow);
 }
 
 /** contact **/
