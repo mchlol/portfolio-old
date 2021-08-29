@@ -156,6 +156,9 @@ align-items: center;
   }
 }
 
+#info {
+  padding: 50px;
+}
 
 #plans-container {
   width: 80vw;
@@ -247,6 +250,10 @@ align-items: center;
 
 #project4 {
   background: var(--yellow);
+}
+
+#project5 {
+  background: var(--palePurple);
 }
 
 /** contact **/
