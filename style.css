@@ -156,10 +156,6 @@ align-items: center;
   }
 }
 
-#info {
-  padding: 50px;
-}
-
 #plans-container {
   width: 80vw;
   height: auto;
@@ -170,7 +166,7 @@ align-items: center;
 }
 
 .plans {
-  width: 200px;
+  width: 40vw;
   height: auto;
   padding: 20px;
   margin: 10px;
@@ -189,7 +185,7 @@ align-items: center;
   padding: 10px 0px 0px 0px;
 }
 
-/*
+/*ß
 .plans h4 {
   color: white;
 }
@@ -254,6 +250,24 @@ align-items: center;
 
 #project5 {
   background: var(--palePurple);
+}
+
+/** info **/
+
+#About {
+  padding: 25px 0px 50px 0px;
+  width: 100vw;
+  height: auto;
+  background-color: var(--palePurple);
+  color: var(--darkPurple);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#info {
+  padding: 25px;
 }
 
 /** contact **/
