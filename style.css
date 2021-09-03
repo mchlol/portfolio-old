@@ -4,7 +4,7 @@
   --darkPurple: #361A67;
   --teal: #1A675C;
   --palePurple: #CDC6D9;
-  --lightSalmon: lightSalmon;
+  --lightSalmon:#FFA07A;
   --yellow: #FFE37A;
 }
 
@@ -314,14 +314,14 @@ align-items: center;
   align-items: center;
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 517px) {
   #about-wrapper {
     flex-flow: column wrap;
   }
   #info {
-    width: 100vw;
+    width: 100%;
     height: auto;
-    padding: 10px;
+    padding: 25px;
   }
   #about-img {
     width: 100vw;
