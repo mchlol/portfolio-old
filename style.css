@@ -72,6 +72,12 @@ i {
   color: var(--darkPurple);
 }
 
+@media screen and (max-width: 860px) {
+  #navbar {
+    font-size: .8em;
+  }
+}
+
 #navbar a {
   color: var(--teal);
 }
@@ -122,11 +128,15 @@ nav a {
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+  
+  /*
   background-image: url("eberhard-grossgasteiger-NvesrDbsrL4-unsplash.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
+  */
+  background-color: var(--palePurple);
   color: var(--darkPurple);
   /*
   background-color: var(--palePurple);
@@ -148,6 +158,7 @@ align-items: center;
 } 
 */
 
+
 @media screen and (max-width: 860px) {
   #welcome-section {
     background-attachment: scroll;
@@ -156,13 +167,41 @@ align-items: center;
   }
 }
 
-#plans-container {
-  width: 80vw;
-  height: auto;
+#welcome-container {
   display: flex;
   flex-flow: row wrap;
-  align-items: flex-start;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 860px) {
+  #welcome-container {
+    flex-flow: column wrap;
+  }
+  #welcome-img {
+    width: 200px;
+  }
+}
+
+#welcome-heading {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+#welcome-img {
+  width: 40%;
+  height: auto;
+}
+
+#plans-container {
+  width: 40vw;
+  height: auto;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .plans {
@@ -185,7 +224,7 @@ align-items: center;
   padding: 10px 0px 0px 0px;
 }
 
-/*ß
+/*
 .plans h4 {
   color: white;
 }
@@ -258,21 +297,55 @@ align-items: center;
   padding: 25px 0px 50px 0px;
   width: 100vw;
   height: auto;
-  background-color: var(--palePurple);
+  background-color: var(--lightSalmon);
   color: var(--darkPurple);
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+  font-size: .9em;
+  text-align: center;
+}
+
+#about-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 860px) {
+  #about-wrapper {
+    flex-flow: column wrap;
+  }
+  #info {
+    width: 100vw;
+    height: auto;
+    padding: 10px;
+  }
+  #about-img {
+    width: 100vw;
+    height: auto;
+    padding: 10px;
+  }
 }
 
 #info {
   padding: 25px;
+  width: 40vw;
+  height: auto;
+}
+
+#about-img {
+  padding: 25px;
+  width: 40vw;
+  height: auto;
 }
 
 /** contact **/
 
 #Contact {
+  background-color: var(--yellow);
   height: 70vh;
   width: auto;
   display: flex;
