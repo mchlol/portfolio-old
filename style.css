@@ -21,7 +21,7 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   color: var(--darkPurple);
 }
 
@@ -128,36 +128,9 @@ nav a {
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  
-  /*
-  background-image: url("eberhard-grossgasteiger-NvesrDbsrL4-unsplash.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center center;
-  */
   background-color: var(--palePurple);
   color: var(--darkPurple);
-  /*
-  background-color: var(--palePurple);
-  color: white;
-  text-shadow: 2px 2px 6px var(--darkPurple);
-  */
 }
-
-/*
-padding: 25px 0px 50px 0px;
-width: 100vw;
-height: auto;
-background-color: var(--teal);
-color: white;
-display: flex;
-flex-flow: column wrap;
-justify-content: center;
-align-items: center;
-} 
-*/
-
 
 @media screen and (max-width: 860px) {
   #welcome-section {
@@ -166,6 +139,19 @@ align-items: center;
     min-height: 150vh;
   }
 }
+
+#welcome-heading {
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 70px;
+}
+
+
+#welcome-img {
+  width: 50%;
+  height: auto;
+}
+
 
 #welcome-container {
   display: flex;
@@ -176,47 +162,36 @@ align-items: center;
   height: auto;
 }
 
-@media screen and (max-width: 860px) {
-  #welcome-container {
-    flex-flow: column wrap;
-  }
-  #welcome-img {
-    width: 200px;
-  }
-}
-
-#welcome-heading {
-  text-align: center;
-  padding-bottom: 50px;
-}
-
-#welcome-img {
-  width: 40%;
-  height: auto;
-}
 
 #plans-container {
-  width: 40vw;
+  width: 40%;
   height: auto;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: center;
 }
 
 .plans {
-  width: 40vw;
+  width: 40%;
   height: auto;
   padding: 20px;
-  margin: 10px;
   text-align: left;
   border-radius: 20px;
+}
 
-  /*
-  background-color: rgba(54, 26, 103, .1);
-  color: black;
-  text-shadow: none;
-  */
+
+@media screen and (max-width: 700px) {
+  #welcome-container {
+    flex-flow: column wrap;
+  }
+  #welcome-img {
+    width: 300px;
+  }
+  #plans-container {
+    width: 80vw;
+    height: auto;
+  }
 }
 
 .plans ul {
@@ -224,11 +199,7 @@ align-items: center;
   padding: 10px 0px 0px 0px;
 }
 
-/*
-.plans h4 {
-  color: white;
-}
-*/
+
 
 /** projects **/
 
@@ -314,12 +285,18 @@ align-items: center;
   align-items: center;
 }
 
-@media screen and (max-width: 517px) {
+#info {
+  padding: 25px;
+  width: 40vw;
+  height: auto;
+}
+
+@media screen and (max-width: 860px) {
   #about-wrapper {
     flex-flow: column wrap;
   }
   #info {
-    width: 100%;
+    width: 80%;
     height: auto;
     padding: 25px;
   }
@@ -330,11 +307,6 @@ align-items: center;
   }
 }
 
-#info {
-  padding: 25px;
-  width: 40vw;
-  height: auto;
-}
 
 #about-img {
   padding: 25px;
@@ -365,7 +337,7 @@ align-items: center;
   align-items: center;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 375px) {
   #contact-links {
     width: 100%;
     flex-flow: column wrap;
