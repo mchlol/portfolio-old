@@ -121,13 +121,15 @@ nav a {
 
 #welcome-section {
   margin-top: 0px;
-  padding-top: 0px;
-  height: 100vh;
+  padding: 50px;
+  /* height: 100vh; */
   width: auto;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+  background: url(./eberhard-grossgasteiger-NvesrDbsrL4-unsplash.jpeg) no-repeat fixed center;
+  background-size: cover;
   background-color: var(--palePurple);
   color: var(--darkPurple);
 }
@@ -136,7 +138,7 @@ nav a {
   #welcome-section {
     background-attachment: scroll;
     text-align: center;
-    min-height: 150vh;
+    /* min-height: 150vh; */
   }
 }
 
@@ -144,6 +146,8 @@ nav a {
   text-align: center;
   padding-bottom: 50px;
   padding-top: 70px;
+  text-shadow: 2px 2px 5px #aaa;
+  color: #fff;
 }
 
 
@@ -158,13 +162,10 @@ nav a {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: auto;
 }
 
 
 #plans-container {
-  width: 40%;
   height: auto;
   display: flex;
   flex-flow: row wrap;
@@ -173,7 +174,7 @@ nav a {
 }
 
 .plans {
-  width: 40%;
+  flex: 1;
   height: auto;
   padding: 20px;
   text-align: left;
