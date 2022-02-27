@@ -122,10 +122,10 @@ nav a {
 
 #welcome-section {
   margin-top: 0px;
-  padding: 50px;
-  height: 100vh;
-  width: auto;
-  background-color: #000;
+  padding-top: 50px;
+  width: 100vw;
+  height: auto;
+  background-color: var(--darkPurple);
   /* display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -137,17 +137,16 @@ nav a {
 }
 
 .cooltext {
-  font-size: 10em;
+  font-size: 15vw;
   font-family: 'MuseoModerno', Georgia, cursive;
   text-align: center;
-  margin: 0;
   padding: 25px;
   background: url("./eberhard-grossgasteiger-NvesrDbsrL4-unsplash.jpeg") center;
   word-break: break-all;
   line-height: 0.8;
   background-size: cover;
   margin: auto;
-  width: 80vw;
+  width: auto;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
