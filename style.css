@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Shippori+Mincho:wght@500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@200;400;900&display=swap');
+
 :root {
   --darkPurple: #361A67;
   --teal: #1A675C;
   --palePurple: #CDC6D9;
-  --lightSalmon:#FFA07A;
+  --lightSalmon: #FFA07A;
   --yellow: #FFE37A;
 }
 
@@ -26,7 +27,11 @@ body {
   color: var(--darkPurple);
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: 'Shippori Mincho', serif;
 }
 
@@ -39,7 +44,7 @@ h2 {
 }
 
 h3 {
- font-size: 1.5em; 
+  font-size: 1.5em;
 }
 
 ul {
@@ -125,15 +130,23 @@ nav a {
   padding-top: 50px;
   width: 100vw;
   height: auto;
-  background-color: var(--darkPurple);
-  /* display: flex;
+  /* background-color: var(--darkPurple); */
+
+  display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
   background: url(./eberhard-grossgasteiger-NvesrDbsrL4-unsplash.jpeg) no-repeat fixed center;
   background-size: cover;
   background-color: var(--palePurple);
-  color: var(--darkPurple); */
+  color: var(--darkPurple);
+}
+
+.welcome-overlay {
+  /* z-index: 2; */
+  width: 80%;
+  margin: 0 auto;
+  padding: 3em;
 }
 
 .cooltext {
@@ -204,9 +217,11 @@ nav a {
   #welcome-container {
     flex-flow: column wrap;
   }
+
   #welcome-img {
     width: 300px;
   }
+
   #plans-container {
     width: 80vw;
     height: auto;
@@ -234,7 +249,8 @@ nav a {
   align-items: center;
 }
 
-#projects, p {
+#projects,
+p {
   text-align: center;
 }
 
@@ -262,25 +278,18 @@ nav a {
   height: auto;
 }
 
-#project1 {
+.project-yellow {
   background: var(--yellow);
 }
 
-#project2 {
+.project-pink {
   background: var(--lightSalmon);
 }
 
-#project3 {
+.project-lavender {
   background: var(--palePurple);
 }
 
-#project4 {
-  background: var(--yellow);
-}
-
-#project5 {
-  background: var(--palePurple);
-}
 
 /** info **/
 
@@ -315,11 +324,13 @@ nav a {
   #about-wrapper {
     flex-flow: column wrap;
   }
+
   #info {
     width: 80%;
     height: auto;
     padding: 25px;
   }
+
   #about-img {
     width: 100vw;
     height: auto;
@@ -347,7 +358,7 @@ nav a {
   padding-bottom: 20px;
 }
 
-#contact-links {
+.contact-links {
   width: 50%;
   font-size: 1.5em;
   padding-top: 20px;
@@ -366,11 +377,9 @@ nav a {
 
 
 
-/** disclaimer **/
+/** footer **/
 
 .disclaimer {
-  background-color: var(--darkPurple);
-  color: white;
   font-size: .7em;
   text-align: center;
   padding: 10px;

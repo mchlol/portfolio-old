@@ -26,13 +26,17 @@
         Welcome</a>
     </li>
     <li>
+      <a href="#About">
+        About
+      </a>
+    </li>
+    <li>
       <a href="#projects">
         Projects</a>
     </li>
     <li>
-      <a href="#About">
-        About
-      </a>
+      <a href="#contact">
+        Contact</a>
     </li>
   </ul>
 
@@ -44,78 +48,14 @@
 
   <!-- welcome-->
 
-  <section id="welcome-section" class="welcome">
-    <p>Hello, I'm</p>
-    <h1 class="cooltext">&lt;mchlol <i class="fas fa-cloud-rain"></i>/&gt;</p>
-
-  </section>
-
-
-  <!-- projects -->
-
-  <section id="projects">
-    <h1>Projects</h1>
-    <p>Examples go here! I'll come back and add these if I ever make something cool enough to share.<br>
-      For now, you can have some of my goofy little learner projects.<br>
-
-      <br>
-    </p>
-
-    <div id="project-container">
-
-      <!-- start project tile -->
-      <article id="project1" class="project-tile">
-        <a href="https://mchlol.github.io/superdraw/" target="_blank">
-          <h3>SuperDraw</h3>
-          <img class="project-img" src="./assets/project-superdraw.gif" alt="gif of superdraw in action">
-        </a>
-        <p>A childhood inspired crayon colouring canvas fun</p>
-      </article>
-      <!-- end project tile -->
-
-      <!-- start project tile -->
-      <article id="project2" class="project-tile">
-        <a href="https://mchlol.github.io/wordsearch/" target="_blank">
-          <h3>Wordsearch</h3>
-          <img class="project-img" src="./assets/project-wordsearch.gif" alt="gif of wordsearch in action">
-        </a>
-        <p>A houseplant-themed wordsearch - WIP</p>
-      </article>
-      <!-- end project tile -->
-
-      <!-- start project tile -->
-      <article id="project3" class="project-tile">
-        <a href="https://mchlol.github.io/rockpaperscissors/" target="_blank">
-          <h3>Rock! Paper! Scissors!</h3>
-          <img class="project-img" src="./assets/project-rockpaperscissors.gif"
-            alt="screenshot of rock paper scissors interface">
-        </a>
-        <p>Baby's first DOM manipulation. Built for <a href="https://www.theodinproject.com" target="_blank">The Odin
-            Project</a> (unstyled)</p>
-      </article>
-      <!-- end project tile -->
-
-      <!-- start project tile -->
-      <article id="project4" class="project-tile">
-        <a href="https://mchlol.github.io/recipes/" target="_blank">
-          <h3>Recipes</h3>
-          <img class="project-img" src="./assets/project-recipes.gif" alt="screenshot of recipes page">
-        </a>
-        <p>A little collection of modified recipes (WIP)</p>
-      </article>
-
-      <article id="project5" class="project-tile">
-        <a href="https://mchlol.github.io/etchasketch" target="_blank">
-          <h3>Pixel Sketchpad</h3>
-          <img class="project-img" src="./assets/project-pixel-sketchpad.gif" alt="screenshot of pixel sketchpad">
-        </a>
-        <p>Etchasketch-like pixel drawing canvas, built for <a href="https://www.theodinproject.com" target="_blank">The
-            Odin Project</a> </p>
-        </a>
-      </article>
-
-    </div>
-
+  <section id="welcome-section">
+    <div class="welcome">
+      <h1 class="cooltext">&lt;mchlol <i class="fas fa-cloud-rain"></i>/&gt;</p>
+      </h1>
+      <div class="welcome-overlay">
+        <h1>Hello, I'm mchlol, an aspiring developer of some sort.</h1>
+        <p>I'm learning to make accessible & interactive web experiences.</p>
+      </div>
   </section>
 
   <!-- info -->
@@ -215,7 +155,7 @@
       </div>
       <div id="info">
         <h1>About</h1>
-        <p>I'm learning to make accessible & interactive web experiences.</p>
+
         <div id="plans-container">
 
           <div class="plans">
@@ -244,12 +184,12 @@
                   target="_blank">Conquering Responsive Layouts</a></li>
               <li>Google's <a href="https://web.dev/learn/design/" target="_blank">Learn Responsive Design</a></li>
               <li>Google's <a href="https://web.dev/learn/forms/" target="_blank">Learn Forms</a></li>
+              <li><a href="https://justjavascript.com/" target="_blank">Just JavaScript</a> by Dan Abromov</li>
             </ul>
           </div>
 
         </div> <!-- close plans container-->
-        <a id="profile-link" href="https://github.com/mchlol" target="_blank">
-          Github <i class="fab fa-github"></i></a>
+
 
       </div> <!-- close image & plans wrapper -->
     </div>
@@ -258,20 +198,123 @@
 </section>
 
 
+<!-- projects -->
+
+<section id="projects">
+  <h1>Projects</h1>
+  <p>Examples go here! I'll come back and add these if I ever make something cool enough to share.<br>
+    For now, you can have some of my goofy little learner projects.<br>
+
+    <br>
+  </p>
+
+  <div id="project-container">
+
+    <!-- start project tile -->
+    <article class="project-tile project-pink">
+      <a href="https://mchlol.github.io/library/" target="_blank">
+        <h3>Library</h3>
+        <img class="project-img" src="./assets/project-library.gif" alt="screenshot of library web app">
+      </a>
+      <p>Library web app to save books, practice using object constructors & prototypes. First project built with
+        TailwindCSS.</p>
+    </article>
+
+    <article class="project-tile project-pink">
+      <a href="https://mchlol.github.io/etchasketch" target="_blank">
+        <h3>Pixel Sketchpad</h3>
+        <img class="project-img" src="./assets/project-pixel-sketchpad.gif" alt="screenshot of pixel sketchpad">
+      </a>
+      <p>Etchasketch-like pixel drawing canvas, built for <a href="https://www.theodinproject.com" target="_blank">The
+          Odin Project</a> </p>
+      </a>
+    </article>
+    <!-- end project tile -->
+
+    <!-- start project tile -->
+    <article class="project-tile project-yellow">
+      <a href="https://mchlol.github.io/superdraw/" target="_blank">
+        <h3>SuperDraw</h3>
+        <img class="project-img" src="./assets/project-superdraw.gif" alt="gif of superdraw in action">
+      </a>
+      <p>A childhood inspired crayon colouring canvas fun</p>
+    </article>
+    <!-- end project tile -->
+
+    <!-- start project tile -->
+    <article class="project-tile project-lavender">
+      <a href="https://mchlol.github.io/wordsearch/" target="_blank">
+        <h3>Wordsearch</h3>
+        <img class="project-img" src="./assets/project-wordsearch.gif" alt="gif of wordsearch in action">
+      </a>
+      <p>A houseplant-themed wordsearch - WIP</p>
+    </article>
+    <!-- end project tile -->
+
+    <!-- start project tile -->
+    <article class="project-tile project-lavender">
+      <a href="https://mchlol.github.io/rockpaperscissors/" target="_blank">
+        <h3>Rock! Paper! Scissors!</h3>
+        <img class="project-img" src="./assets/project-rockpaperscissors.gif"
+          alt="screenshot of rock paper scissors interface">
+      </a>
+      <p>Baby's first DOM manipulation. Built for <a href="https://www.theodinproject.com" target="_blank">The Odin
+          Project</a> (unstyled)</p>
+    </article>
+    <!-- end project tile -->
+
+    <!-- start project tile -->
+    <article class="project-tile project-yellow">
+      <a href="https://mchlol.github.io/recipes/" target="_blank">
+        <h3>Recipes</h3>
+        <img class="project-img" src="./assets/project-recipes.gif" alt="screenshot of recipes page">
+      </a>
+      <p>A little collection of modified recipes (WIP)</p>
+    </article>
+
+    <article class="project-tile project-lavender">
+      <a href="https://mchlol.github.io/etchasketch" target="_blank">
+        <h3>Pixel Sketchpad</h3>
+        <img class="project-img" src="./assets/project-pixel-sketchpad.gif" alt="screenshot of pixel sketchpad">
+      </a>
+      <p>Etchasketch-like pixel drawing canvas, built for <a href="https://www.theodinproject.com" target="_blank">The
+          Odin Project</a> </p>
+      </a>
+    </article>
+    <!-- end project tile -->
+
+  </div>
+
+</section>
+
+<section id="Contact">
+  <h1>Contact</h1>
+  <div class="contact-links">
+    <a id="profile-link" href="https://github.com/mchlol" target="_blank">
+      Github <i class="fab fa-github"></i></a>
+    <a href="https://twitter.com/mchlol" target="_blank">Twitter <i class="fab fa-twitter"></i></a>
+
+  </div>
+
+</section>
+
+
 <!-- disclaimer -->
+<footer>
+  <p class="disclaimer"><em>All code & content by</em> mchlol <i class="fas fa-cloud-rain"></i>. Illustrations from <a
+      href="https://undraw.co/" target="_blank">unDraw</a><br>
 
-<p class="disclaimer"><em>All code & content by</em> mchlol <i class="fas fa-cloud-rain"></i>. Illustrations from <a
-    href="https://undraw.co/" target="_blank">unDraw</a><br>
-  <!-- header img removed for now 
-  <em>Header Photo by <a
-      href="https://unsplash.com/@sigmund?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sigmund</a>
-    on <a
-      href="https://unsplash.com/s/photos/web-development?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  </em>
-  -->
-</p>
+    <em>
+      Header Photo by <a
+        href="https://unsplash.com/@eberhardgross?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">eberhard
+        🖐 grossgasteiger</a>
+      on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
-</div>
+    </em>
+
+  </p>
+</footer>
+
 
 </body>
 
