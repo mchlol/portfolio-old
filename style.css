@@ -275,6 +275,8 @@ nav a {
 .project-img {
   width: 300px;
   height: auto;
+  border-radius: 20px;
+  padding: 0.25em;
 }
 
 .project-yellow {
@@ -292,7 +294,7 @@ nav a {
 
 /** info **/
 
-#About {
+#Courses {
   padding: 25px 0px 50px 0px;
   width: 100vw;
   height: auto;
