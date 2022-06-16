@@ -249,8 +249,7 @@ nav a {
   align-items: center;
 }
 
-#projects,
-p {
+#projects p {
   text-align: center;
 }
 
@@ -348,7 +347,7 @@ p {
 /** contact **/
 
 #Contact {
-  background-color: var(--yellow);
+  background-color: var(--palePurple);
   height: 70vh;
   width: auto;
   display: flex;
